@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Online Store - Bas Case</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style/mainStyle.css">
+  <link rel="stylesheet" href="style/productList.css">
+  <link rel="stylesheet" href="style/productPage.css">
+  <link rel="stylesheet" href="style/shoopingCart.css">
+</head>
+
+<body>
+    
+    <!-- Nav bar -->
+    <nav>
+        <ul>
+            <li id="backBtn"><a><span id="backArrow" class="material-icons-outlined">chevron_left</span> Back</a></li>
+            <li id="cartBtn"><a><span class="material-icons-outlined">shopping_cart</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Content section -->
+
+    <section class="contentContainer"></section>
+    
+
+    <!-- Templates -->
+
+    <template id="shoppingCartTemplate">
+        <div class="shoppingCartContainer">
+            <div id="shoopingCartList"></div>
+            <div class="shoppingCartFooter">
+                <button class="emptyCartBtn">Empty Cart</button>
+                <p><sub>Subtotal:</sub></p>
+                <button class="buy">Pay</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="cartItemTemplate">
+        <div class="cartItemContainer">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            <p class="title">Title</p>
+            <p>Price</p>
+            <button><span class="material-icons-outlined">remove</span></button>
+        </div>
+        <hr>
+    </template>
+
+    <template id="productPageTemplate">
+        <div class="productPageContainer">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            <div class="productInfo">
+                <div class="productInfoContent">
+                    <h1>Product title</h1>
+                    <p>Kategori</p>
+                    <p>Pris</p>
+                    <button class="buy">Buy</button>
+                    <button class="addToCart"><span class="material-icons-outlined">add_shopping_cart</span></button>
+                    <p>Anmeldelser</p>
+                    <div class="starReviewContainer">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                    </div>
+                    <h3>Product details</h3>
+                    <p>Beskrivelse</p>
+                </div>
+            </div> 
+        </div>
+    </template>
+
+    <template id="itemListContainerTemplate">
+        <div class="itemsListContainer"></div>
+    </template>
+
+    <template id="itemListTemplate">
+        <div class="itemContainer">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            <div class="itemInfoText">
+                <h3 class="productTitle">Product titlte</h3>
+                <p>Kategori</p>
+                <p>kr. 1 649</p>
+            </div>
+        </div>
+    </template>
+
+    
+  <script src="script/script.js"></script>
+</body>
+</html>

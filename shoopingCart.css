@@ -1,0 +1,97 @@
+/* Shooping cart CSS */
+
+.shoppingCartContainer h3{
+    text-align: center;
+    padding: 5rem 0;
+    color: rgb(40, 40, 40);
+}
+
+.cartItemContainer{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 75px;
+    padding: 0 0.5rem; 
+}
+.cartItemContainer img{
+    height: 75px;
+}
+
+.cartItemContainer p {
+    color: black;
+    padding: 12px;
+}
+
+p.title{
+    font-weight: bold;
+}
+
+.cartItemContainer button{
+    background-color: whitesmoke;
+    color: black;
+    border: 0px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    justify-self: end;
+}
+.cartItemContainer button:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+    color: rgb(40, 40, 40);
+}
+.shoppingCartFooter{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 150px 1fr 100px;
+    margin-top: 3rem;
+    padding: 0 0.5rem;
+}
+
+@media(max-width: 40em){
+    .shoppingCartFooter{
+        width: 97%;
+        position: fixed;
+        bottom: .5rem;
+    }
+}
+
+.shoppingCartFooter p{
+    justify-self: end;
+}
+
+.shoppingCartFooter sub{
+    font-size: 12pt;
+}
+
+.shoppingCartFooter button{
+    width: 120px;
+    justify-self: start;
+    border: 0px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 12pt;
+}
+
+.shoppingCartFooter button.buy{
+    width: 100px;
+    justify-self: end;
+    border: 0px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+}
+
+.shoppingCartFooter button:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+    color: rgb(40, 40, 40);
+}
+
+.shoppingCartFooter button.buy:hover{
+    color: whitesmoke;
+    background-color: rgb(53, 53, 53);
+}
