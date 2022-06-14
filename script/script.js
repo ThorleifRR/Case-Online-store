@@ -14,6 +14,7 @@ let shoppingCartSave = localStorage.getItem("shoppingCart");
 
 if(shoppingCartSave) shoppingCart = shoppingCartSave.split(",");
 
+// Noen endringer her 
 
 backBtn.style.visibility = "hidden";
 
